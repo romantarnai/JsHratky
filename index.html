@@ -9,12 +9,27 @@
 <body>
     <div class="navbar">
         <h2>Hrátky s javascriptem</h2>
-        <ul>
-            <li><a href="#">Animations</a></li>
-            <li><a href="#">3D</a></li>
-            <li><a href="#">Map</a></li>
+        <ul class="nav-links">
+            <li><a class="link-text" href="#">Random</a></li>
+            <li><a class="link-text" href="#">Random</a></li>
+            <li><a class="link-text" href="#">Random</a></li>
         </ul>
     </div>
+
+    <main>
+        <div class="carousel">
+            <h1>Carousel</h1>
+            <div class="images">
+                <img id="st" class="show"  src="./img/benzinka.jpg" alt="insaneImg">
+                <img id="nd" class="hide" src="./img/drift.jpg" alt="insaneImg">
+                <img id="rd" class="hide" src="./img/greenDrift.jpg" alt="insaneImg">
+            </div>
+            <div class="carousel-btns">
+                <button id="carousel-btn-prev" aria-label="Previus slide"><</button>
+                <button id="carousel-btn-next" aria-label="Next slide">></button>
+            </div>
+        </div>
+    </main>
 
     <script src="./scripts/main.js"></script>
 </body>

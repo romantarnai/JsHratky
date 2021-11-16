@@ -1,3 +1,107 @@
+/* --- global styles --- */
 body{
     background-color: rgb(36, 36, 36);
+    overflow-x: hidden;
+}
+
+/*
+========
+ navbar
+========
+*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;  
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+.link-text{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    margin-left: 5em;
+}
+
+.link-text::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: white;
+    transition: width 0.2s ease-in;
+}
+.link-text:hover::after{
+    width: 100%;
+}
+
+/*
+========
+  main
+========
+*/
+main{
+    margin-top: 10em;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.carousel{
+    position: relative;
+    width: 100%;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: center;
+}
+.carousel .images{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    gap: 1em;
+}
+.carousel img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-btns{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 50%;
+    transform: translatey(-50%);
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+.carousel-btns button{
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+.show{
+    visibility: visible;
+}
+.hide{
+    visibility: hidden;
 }
