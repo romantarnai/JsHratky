@@ -7,6 +7,7 @@
     <title>JsHrátky</title>
 </head>
 <body>
+    <!--Navbar-->
     <div class="navbar">
         <h2>Hrátky s javascriptem</h2>
         <ul class="nav-links">
@@ -16,21 +17,45 @@
         </ul>
     </div>
 
+    <!--Main section start-->
     <main>
+        <!--Carousel start-->
+        <div class="car-slider">
+        <h1 class="car-title">Furt bokem - Carousel</h1>
         <div class="carousel">
-            <h1>Carousel</h1>
-            <div class="images">
-                <img id="st" class="show"  src="./img/benzinka.jpg" alt="insaneImg">
-                <img id="nd" class="hide" src="./img/drift.jpg" alt="insaneImg">
-                <img id="rd" class="hide" src="./img/greenDrift.jpg" alt="insaneImg">
+            <!--slides start-->
+            <div class="carousel_item carousel_item--visible">
+                <img src="./img/benzinka.jpg" alt="benzinka">
             </div>
-            <div class="carousel-btns">
-                <button id="carousel-btn-prev" aria-label="Previus slide"><</button>
-                <button id="carousel-btn-next" aria-label="Next slide">></button>
+            <div class="carousel_item">
+                <img src="./img/drift.jpg" alt="drift">
+            </div>
+            <div class="carousel_item">
+                <img src="./img/greenDrift.jpg" alt="green-drift">
+            </div>
+            <div class="carousel_item">
+                <img src="./img/ps.jpg" alt="ps13">
+            </div>
+            <!--slides end-->
+
+            <!--actions start-->
+            <div class="carousel_actions">
+                <button id="carousel_button--prev" aria-label="prev"><</button>
+                <button id="carousel_button--next" aria-label="next">></button>
+            </div>
+            <div class="carousel_bullets">
+                <div onclick="MoveTo(0)" class="car-bull car-bull-choose"></div>
+                <div onclick="MoveTo(1)" class="car-bull"></div>
+                <div onclick="MoveTo(2)" class="car-bull"></div>
+                <div onclick="MoveTo(3)" class="car-bull"></div>
             </div>
         </div>
+        </div>
+        <!--Carousel end-->
     </main>
+    <!--Main section end-->
 
-    <script src="./scripts/main.js"></script>
+    <script src="./scripts/carousel.js"></script>
+    <script src="./scripts/burger.js"></script>
 </body>
 </html>
