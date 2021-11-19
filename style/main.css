@@ -16,7 +16,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -38,6 +38,7 @@ body{
 .nav-links{
     display: flex;
     list-style: none;
+    text-align: center;
 }
 .link-text{
     position: relative;
@@ -125,7 +126,7 @@ body{
 */
 .carousel{
     position: absolute;
-    top: 0;
+    top: 6vh;
     overflow: hidden;
     width: 100vw;
     height: max-content;
@@ -204,6 +205,7 @@ main{
     text-align: center;
     color: white;
     margin-bottom: 3em;
+    margin-top: 5em;
     width: 100%;
 }
 .statsText h2{
