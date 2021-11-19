@@ -13,11 +13,10 @@ body{
 ========
 */
 .navbar{
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
@@ -126,7 +125,7 @@ body{
 */
 .carousel{
     position: absolute;
-    top: 6vh;
+    top: 0;
     overflow: hidden;
     width: 100vw;
     height: max-content;
@@ -184,7 +183,7 @@ body{
 ===============
 */
 main{
-    margin-top: 10em;
+    margin-top: 5em;
     margin-left: 5%;
     margin-right: 5%;
     display: grid;
@@ -200,6 +199,22 @@ main{
 .chart{
     position: relative;
     width: 60vw;
+}
+.statsText{
+    text-align: center;
+    color: white;
+    margin-bottom: 3em;
+    width: 100%;
+}
+.statsText h2{
+    font-size: 3rem;
+}
+.statsText p{
+    font-size: 1.2rem;
+}
+.statsText span{
+    font-weight: bold;
+    font-size: 1.25rem;
 }
 
 

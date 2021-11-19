@@ -16,7 +16,7 @@
             <div class="line"></div>
         </div>
         <ul class="nav-links">
-            <li><a class="link-text" href="#">Random</a></li>
+            <li><a class="link-text" onclick="smoothScroll('.chart', 750)" href="#">Stats</a></li>
             <li><a class="link-text" href="#">Random</a></li>
             <li><a class="link-text" href="#">Random</a></li>
         </ul>
@@ -51,9 +51,17 @@
 
     <!--Main section start-->
     <main>
-        <div class="chart">
+        <section class="chart">
+            <div class="statsText">
+                <h2>Never forget to drive safe!</h2>
+                <p>
+                    There are thousands of people dying, because of car accidents.
+                    Most of them by agressive driving and lack of awareness. <br>
+                    <span>Stay safe!</span>
+                </p>
+            </div>
             <canvas id="myChart"></canvas>
-        </div>
+        </section>
     </main>
     <!--Main section end-->
 
@@ -61,5 +69,6 @@
     <script src="./scripts/burger.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./scripts/stats.js"></script>
+    <script src="./scripts/scroll.js"></script>
 </body>
 </html>
