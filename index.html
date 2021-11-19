@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
     <link rel="stylesheet" href="./style/main.css">
     <title>JsHrátky</title>
 </head>
@@ -16,9 +18,9 @@
             <div class="line"></div>
         </div>
         <ul class="nav-links">
-            <li><a class="link-text" href="#">Statistics</a></li>
-            <li><a class="link-text" href="#">Map</a></li>
-            <li><a class="link-text" href="#">Gallery</a></li>
+            <li><a class="link-text burger-link1">Statistics</a></li>
+            <li><a class="link-text burger-link2">Map</a></li>
+            <li><a class="link-text burger-link3">Gallery</a></li>
         </ul>
     </div>
 
@@ -52,7 +54,7 @@
     <!--Main section start-->
     <main>
         <section class="chart">
-            <div class="statsText">
+            <div class="desc">
                 <h2>Never forget to drive safe!</h2>
                 <p>
                     There are thousands of people dying, because of car accidents.
@@ -62,13 +64,50 @@
             </div>
             <canvas id="myChart"></canvas>
         </section>
+
+        <section class="mapa">
+            <div class="desc">
+                <h2>Japan drift place</h2>
+                <p>
+                    There are many places in Japan, where you can drift.
+                    Here you can see some of them.
+                </p>
+            </div>
+            <div id="map"></div>
+        </section>
+
+        <section class="gallery">
+            <div class="desc">
+                <h2>Drift action</h2>
+                <p>
+                    Here you can see some drifting action from profesional drifters.
+                </p>
+            </div>
+            <div class="gallery-grid">
+                <img class="a" src="./img/drift1.jpg">
+                <img class="b" src="./img/drift2.jpg">
+                <img class="c" src="./img/drift3.jpg">
+                <img class="d" src="./img/drift4.jpg">
+                <img class="e" src="./img/drift5.jpg">
+            </div>
+        </section>
     </main>
     <!--Main section end-->
 
+
+    <footer>
+        <img src="./img/facebook-logo.png">
+        <img src="./img/instagram-logo.png">
+        <img src="./img/twitter-logo.png">
+    </footer>
+
+
+    <!--scripts-->
     <script src="./scripts/carousel.js"></script>
     <script src="./scripts/burger.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./scripts/stats.js"></script>
     <script src="./scripts/scroll.js"></script>
+    <script src="./scripts/map.js"></script>
 </body>
 </html>

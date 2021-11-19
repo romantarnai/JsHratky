@@ -1,19 +1,37 @@
 let menu_open = false;
 var navbar = document.getElementById('nav');
-var links = document.querySelectorAll('.link-text');
+var link1 = document.querySelector('.burger-link1');
+var link2 = document.querySelector('.burger-link2');
+var link3 = document.querySelector('.burger-link3');
 
-/* fix for scroll */
-for(var link of links){
-    link.addEventListener("click", ()=>{
-        if(menu_open){
-            burger();
-            setTimeout(function() { smoothScroll('.chart', 1000); }, 250);
-        }
-        else{
-            smoothScroll('.chart', 1000);
-        }
-    })
-}
+link1.addEventListener("click", ()=>{
+    if(menu_open){
+        burger();
+        setTimeout(function() { smoothScroll('.chart'); }, 250);
+    }
+    else{
+        smoothScroll('.chart');
+    }
+})
+link2.addEventListener("click", ()=>{
+    if(menu_open){
+        burger();
+        setTimeout(function() { smoothScroll('.mapa'); }, 250);
+    }
+    else{
+        smoothScroll('.mapa');
+    }
+})
+link3.addEventListener("click", ()=>{
+    if(menu_open){
+        burger();
+        setTimeout(function() { smoothScroll('.gallery'); }, 250);
+    }
+    else{
+        smoothScroll('.gallery');
+    }
+})
+
 
 const burger_menu = document.getElementById('burger').addEventListener("click", ()=>{
     burger();
