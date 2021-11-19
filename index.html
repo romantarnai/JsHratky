@@ -22,45 +22,44 @@
         </ul>
     </div>
 
+    <!--Carousel start-->
+    <div class="carousel">
+        <!--slides start-->
+        <div class="carousel_item carousel_item--visible">
+            <img src="./img/benzinka.jpg" alt="benzinka">
+        </div>
+        <div class="carousel_item">
+            <img src="./img/drift.jpg" alt="drift">
+        </div>
+        <div class="carousel_item">
+            <img src="./img/greenDrift.jpg" alt="green-drift">
+        </div>
+        <div class="carousel_item">
+            <img src="./img/ps.jpg" alt="ps13">
+        </div>
+        <!--slides end-->
+        
+        <!--actions start-->
+        <div class="carousel_bullets">
+            <div onclick="MoveTo(0)" class="car-bull car-bull-choose"></div>
+            <div onclick="MoveTo(1)" class="car-bull"></div>
+            <div onclick="MoveTo(2)" class="car-bull"></div>
+            <div onclick="MoveTo(3)" class="car-bull"></div>
+        </div>
+    </div>
+    <!--Carousel end-->
+
     <!--Main section start-->
     <main>
-        <!--Carousel start-->
-        <div class="car-slider">
-        <h1 class="car-title">Furt bokem - Carousel</h1>
-        <div class="carousel">
-            <!--slides start-->
-            <div class="carousel_item carousel_item--visible">
-                <img src="./img/benzinka.jpg" alt="benzinka">
-            </div>
-            <div class="carousel_item">
-                <img src="./img/drift.jpg" alt="drift">
-            </div>
-            <div class="carousel_item">
-                <img src="./img/greenDrift.jpg" alt="green-drift">
-            </div>
-            <div class="carousel_item">
-                <img src="./img/ps.jpg" alt="ps13">
-            </div>
-            <!--slides end-->
-
-            <!--actions start-->
-            <div class="carousel_actions">
-                <button id="carousel_button--prev" aria-label="prev"><</button>
-                <button id="carousel_button--next" aria-label="next">></button>
-            </div>
-            <div class="carousel_bullets">
-                <div onclick="MoveTo(0)" class="car-bull car-bull-choose"></div>
-                <div onclick="MoveTo(1)" class="car-bull"></div>
-                <div onclick="MoveTo(2)" class="car-bull"></div>
-                <div onclick="MoveTo(3)" class="car-bull"></div>
-            </div>
+        <div class="chart">
+            <canvas id="myChart"></canvas>
         </div>
-        </div>
-        <!--Carousel end-->
     </main>
     <!--Main section end-->
 
     <script src="./scripts/carousel.js"></script>
     <script src="./scripts/burger.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./scripts/stats.js"></script>
 </body>
 </html>

@@ -17,7 +17,6 @@ function UpdateSlides(){
     }
     bullets[slidePosition].classList.add('car-bull-choose')
 }
-
 /* moving functions */
 function MoveToNext(){
     if(slidePosition < totalSlides - 1){
@@ -29,27 +28,11 @@ function MoveToNext(){
 
     UpdateSlides()
 }
-function MoveToPrev(){
-    if(slidePosition > 0){
-        slidePosition--;
-    }
-    else{
-        slidePosition = totalSlides -1;
-    }
-
-    UpdateSlides()
-}
 function MoveTo(number){
     slidePosition = number;
     UpdateSlides();
 }
 
-document.getElementById('carousel_button--next').addEventListener("click", ()=>{
-    MoveToNext()
-})
-document.getElementById('carousel_button--prev').addEventListener("click", ()=>{
-    MoveToPrev()
-})
 
 /* auto moving */
 var interval = window.setInterval(autoMove, 8500);
