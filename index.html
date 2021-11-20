@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
     <link rel="stylesheet" href="./style/main.css">
     <title>JsHrátky</title>
 </head>
+
 <body>
     <!--Navbar-->
-    <div id="nav" class="navbar"> <!--.nav-clicked for js-->
+    <div id="nav" class="navbar">
+        <!--.nav-clicked for js-->
         <h2>Hrátky s javascriptem</h2>
         <div id="burger" class="burger">
             <div class="line"></div>
@@ -40,7 +47,7 @@
             <img src="./img/ps.jpg" alt="ps13">
         </div>
         <!--slides end-->
-        
+
         <!--actions start-->
         <div class="carousel_bullets">
             <div onclick="MoveTo(0)" class="car-bull car-bull-choose"></div>
@@ -84,11 +91,21 @@
                 </p>
             </div>
             <div class="gallery-grid">
-                <img class="a" src="./img/drift1.jpg">
-                <img class="b" src="./img/drift2.jpg">
-                <img class="c" src="./img/drift3.jpg">
-                <img class="d" src="./img/drift4.jpg">
-                <img class="e" src="./img/drift5.jpg">
+                <div class="a">
+                    <img src="./img/drift1.jpg">
+                </div>
+                <div class="b">
+                    <img src="./img/drift2.jpg">
+                </div>
+                <div class="c">
+                    <img src="./img/drift3.jpg">
+                </div>
+                <div class="d">
+                    <img src="./img/drift4.jpg">
+                </div>
+                <div class="e">
+                    <img src="./img/drift5.jpg">
+                </div>
             </div>
         </section>
     </main>
@@ -109,5 +126,6 @@
     <script src="./scripts/stats.js"></script>
     <script src="./scripts/scroll.js"></script>
     <script src="./scripts/map.js"></script>
+    <script src="./scripts/lightbox.js"></script>
 </body>
 </html>
