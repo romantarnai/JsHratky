@@ -87,7 +87,7 @@ body{
     transform: translateY(-50%);
     right: 2em;
 }
-
+/* burger */
 @media screen and (max-width: 768px) {
     .nav-links{
         display: none;
@@ -241,7 +241,7 @@ main{
 ==============
 */
 .gallery{
-    max-width: 80%;
+    width: 60vw;
     margin-bottom: 10em;
     margin-left: auto;
     margin-right: auto;
@@ -306,6 +306,57 @@ footer img:hover{
     margin-bottom: 0.5em;
 }
 
+
+/*
+==============
+   tablet
+==============
+*/
+@media screen and (max-width: 768px) {
+    .mapa, #map, .chart, .gallery{
+        width: 80vw;
+    }
+    
+    .desc h2{
+        font-size: 2.5rem;
+    }
+    .desc p{
+        font-size: 1rem;
+    }
+    .desc span{
+        font-size: 1.1rem;
+    }
+}
+/*
+==============
+    mobile
+==============
+*/
+@media screen and (max-width: 480px) {
+    main{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .mapa, #map, .chart, .gallery{
+        width: 95vw;
+    }
+    .gallery-grid{
+        gap: 0.5em;
+    }
+
+    .navbar h2{
+        font-size: 1.2rem;
+    }
+    .desc h2{
+        font-size: 2rem;
+    }
+    .desc p{
+        font-size: 0.8rem;
+    }
+    .desc span{
+        font-size: 0.9rem;
+    }
+}
 
 /*
 ==============
