@@ -102,8 +102,12 @@ body{
     height: 100vh;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
+.nav-clicked h2{
+    margin-left: 0;
+}
 .nav-clicked .line:nth-child(1n){
     transform: rotateZ(45deg) translateY(5px);
 }
@@ -117,9 +121,13 @@ body{
 .nav-clicked .nav-links{
     flex-direction: column;
     display: block;
+    margin-right: 0;
 }
 .nav-clicked .nav-links li{
     margin-top: 2em;
+}
+.nav-clicked a{
+    margin-left: 0;
 }
 
 /*
